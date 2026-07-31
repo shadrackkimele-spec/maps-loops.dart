@@ -1,19 +1,27 @@
 void main(){
-    var name="kim";
-    int age=22;
-    double weight=60.6;
-    bool isRich=true;
-    dynamic myName="kariuki";
-    var emptyList=[];
-    emptyList.add(20);
-    emptyList.addAll([21,22,23]);
-    print("name:$name");
-    print("age:$age");
-    print("weight:$weight");
-    print("isRich:$isRich");
-    print("myName:$myName");
-    print("emptyList:$emptyList");
-    print("emptyList[22]");
-    print("emptyList[60,61]");
-    print("Next year I will be ${age+1} years old");
-    }
+  var myList=[20,21,23];
+  print("myList:$myList");
+  myList[0]=26;
+  print("myList:$myList");
+  print("myList[23]");
+  print("myList[42,43]");
+  var emptyList=[];
+  emptyList.add(21);
+  emptyList.addAll([22,23]);
+  print("emptyList:$emptyList");
+  print("emptyList[23]");
+  print("emeptyList[50,51]");
+  emptyList.add("kim");
+  emptyList.addAll(["dennis","dorcas"]);
+  print("emptyList:$emptyList");
+  print("emptyList[kim,dorcas]");
+  print("emptyList[glo,victor]");
+  myList.insert(0,500);
+  myList.insertAll(1,[200,300]);
+  print("myList:$myList");
+  var mixedList=[1,2,3,"ken"];
+  print("mixedList:$mixedList");
+  mixedList.remove("ken");
+  mixedList.removeAt(2);
+  print("mixedList:$mixedList");
+}
