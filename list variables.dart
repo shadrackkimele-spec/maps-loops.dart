@@ -1,31 +1,28 @@
 void main(){
-var name="kim";
-int age=23;
-double weight=66.2;
-bool isStudying=true;
-print("name:$name");
-print("age:$age");
-print("weight:$weight");
-print("isStudying:$isStudying");
-print("Next year i will be ${age+1} years old");
-var myList=[1,2,3];
-myList[0]=10;
-print("myList:$myList");
-myList.add(4);
-myList.addAll([6,7]);
-print("myList:$myList");
-var myName=["rue","lyn"];
-myName.insert(0,"glo");
-myName.insertAll(1,["sue","vee"]);
-print("myName:$myName");
-print("myName[sue]");
-print("myName[caro,lee]");
-var emptyList=[];
-emptyList.add(10);
-emptyList.addAll([30,40]);
-print("emptyList:$emptyList");
-var mixedList=[1,2,3,"joe",true];
-mixedList.remove("joe");
-mixedList.removeAt(0);
-print("mixedList:$mixedList");
+    final toppings={"kim":"banana","lee":"sweet"};
+    print(toppings);
+    print(toppings.values);
+    print(toppings.keys);
+    print(toppings.length);
+toppings["sue"]="yam";
+print(toppings);
+toppings.addAll({"vero":"kitenge","joe":"knife"});
+print(toppings);
+toppings.remove("kim");
+print(toppings);
+toppings.clear();
+print(toppings);
+var num=3;
+for(var i=0;i<=num;i++){
+    print(i*2);
+}
+var myList=["apple","soda"];
+for(var list in myList){
+    print(list);
+}
+var i=0;
+while(i<=num){
+    print(i);
+    i++;
+}
 }
